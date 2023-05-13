@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int n,t,d=0,i,j;
+	cin>>t;
+	vector <int> a(t);
+	for (i=0;i<t;i++)
+	{cin>>a[i];
+	d=0;
+	vector<int>n(a[i]);
+	for (j=0;j<a[i];j++)
+	{cin>>n[j];
+	}
+	for (j=0;j<a[i];j++)
+	{if (n[j]>=1000)
+	{d+=1;
+	}}
+	cout<<d<<endl;
+	}
+	return 0;
+}
